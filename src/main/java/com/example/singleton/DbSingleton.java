@@ -7,7 +7,7 @@ public class DbSingleton {
     private DbSingleton(){}
 
     public static DbSingleton getInstance(){
-        return instance;
+        return instance ;
     }
     
 }
