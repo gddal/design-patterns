@@ -2,12 +2,15 @@ package com.example.singleton;
 
 public class DbSingleton {
 
-    private static DbSingleton instance = new DbSingleton();
+    private static DbSingleton instance = null;
 
     private DbSingleton(){}
 
     public static DbSingleton getInstance(){
-        return instance ;
+        if(instance == null)
+            instance = new DbSingleton();
+        
+            return instance ;
     }
     
 }
